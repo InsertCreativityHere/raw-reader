@@ -1,0 +1,18 @@
+[package]
+name = "raw-reader"
+version = "1.0.0"
+authors = ["Austin Henriksen"]
+description = """
+Used for inspecting the contents of disks for forensic recovery.
+"""
+keywords = ["data", "drive", "recovery", "raw"]
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+sysinfo = "0.28.0"
+rustyline = { version = "11.0.0", features = ["derive"] }
+
+[[bin]]
+name = "raw-reader"
+path = "src/main.rs"
